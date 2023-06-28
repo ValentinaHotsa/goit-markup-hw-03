@@ -70,22 +70,23 @@ img {
 
 /* Header section */
 .header-container {
-    width: 1128px;
+    width: 1158px;
     margin-left: auto;
         margin-right: auto;
         padding-left: 15px;
             padding-right: 15px;
         display: flex;
             justify-content: space-between;
-            border-bottom: 1px solid #e7e9fc;
 }
 .header {
- 
+border-bottom: 1px solid var(--accent-color);
 
 
 }
 .header-nav {
-   
+    display: flex;
+        align-items: center;
+        gap: 40px;
 
 }
 .header-logo{
@@ -116,9 +117,7 @@ img {
     align-items: center; 
 }
 .container-nav {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+  
 }
 .header-nav-item a {font-style: normal;
     font-weight: 500;
@@ -127,6 +126,11 @@ img {
     letter-spacing: 0.02em;
     color: var(--dark-color);
     padding: 24px 0;
+}
+.header-nav-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .header-nav-link:hover,
@@ -143,14 +147,12 @@ img {
     align-items: center;
 
 }
-.container-header-adress {
+
+
+.header-adress-list {
 display: flex;
     align-items: center;
     gap: 40px;
-}
-
-.header-adress-list {
-   
     
     
     
@@ -240,7 +242,9 @@ border: none;
         gap: 24px;
 }
 
-.section-features-item {}
+.section-features-item {
+    width: calc((100% - 72px) / 4);
+}
 
 .features-item-title {
     font-family: 'Roboto';
@@ -332,7 +336,7 @@ height: 380px;
     
 }
 .team-content {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 .team-name {
     font-style: normal;
@@ -428,7 +432,8 @@ font-style: normal;
     border: 1px solid transparent;}
 
 .projects {
-   
+    padding-top: 96px;
+        padding-bottom: 120px;
 }
 
 .projects-title {}
@@ -458,7 +463,7 @@ font-style: normal;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--dark-color);
-        padding-bottom: 8px;
+        margin-bottom: 8px;
 }
 
 .projects-type {
@@ -470,17 +475,14 @@ font-style: normal;
         color: var(--text-color);
 }
 .container-portfolio-list {
-  padding-top: 96px;
-  padding-bottom: 120px;
+ 
   justify-content: center;
   margin-bottom: 72px;
    
 }
 .container-projects-border {
     
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 15px;
+    padding: 32px 16px;
     border-left: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC ;
     border-right: 1px solid #E7E9FC;
